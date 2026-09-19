@@ -15,6 +15,7 @@ meson compile -C build
 
 ## Runing
 ```sh
+docker compose up -d
 docker exec -it kafka-broker kafka-console-consumer --bootstrap-server localhost:9092 --topic test_topic --from-beginning
 
 ./build/consumer_app &
