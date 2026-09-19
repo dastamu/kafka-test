@@ -1,19 +1,19 @@
 # kafka-test
 Testing Kafka brocker
 
-# Dependences
+## Dependences
 ```sh
 @ EL
 sudo dnf install librdkafka-devel
 ```
 
-# Building
+## Building
 ```sh
 meson setup build
 meson compile -C build
 ```
 
-# Runing
+## Runing
 ```sh
 docker exec -it kafka-broker kafka-console-consumer --bootstrap-server localhost:9092 --topic test_topic --from-beginning
 
@@ -22,8 +22,8 @@ docker exec -it kafka-broker kafka-console-consumer --bootstrap-server localhost
 ./build/producer_app
 ```
 
-# License
+## License
 MIT
 
-# Author
+## Author
 dastamu
