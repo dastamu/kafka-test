@@ -3,8 +3,8 @@
 #include <librdkafka/rdkafkacpp.h>
 
 int main() {
-    // std::string brokers = "localhost:9092";
-    std::string brokers = "192.168.3.71:9092";
+    std::string brokers = "localhost:9092";
+    //std::string brokers = "192.168.3.71:9092";
     std::string topic_name = "test_topic";
     std::string errstr;
 

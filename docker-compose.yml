@@ -1,7 +1,8 @@
 services:
   kafka:
     #image: confluentinc/cp-kafka:7.5.0
-    image: confluentinc/cp-kafka:latest
+    #image: confluentinc/cp-kafka:latest
+    image: docker.io/confluentinc/cp-kafka:latest
     container_name: kafka-broker
     ports:
       - "9092:9092"
@@ -16,7 +17,7 @@ services:
       KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: 'CONTROLLER:PLAINTEXT,PLAINTEXT:PLAINTEXT'
 
       # KLUCZOWE DLA KOMUNIKACJI MIĘDZY MASZYNAMI:
-      KAFKA_ADVERTISED_LISTENERS: 'PLAINTEXT://192.168.x.x:9092'
+      KAFKA_ADVERTISED_LISTENERS: 'PLAINTEXT://localhost:9092'
 
       # Wymagane dla KRaft
       KAFKA_CLUSTER_ID: 'MkU3OEVBNTcwNTJDRDk1Qg'
