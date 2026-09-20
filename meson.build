@@ -9,10 +9,10 @@ rdkafka_dep = dependency('rdkafka++')
 
 # 2. Definicja pliku wykonywalnego dla Producenta
 executable('producer_app',
-           'producer.cpp',
+           'src/producer.cpp',
            dependencies : rdkafka_dep)
 
 # 3. Definicja pliku wykonywalnego dla Konsumenta
 executable('consumer_app',
-           'consumer.cpp',
+           'src/consumer.cpp',
            dependencies : rdkafka_dep)
