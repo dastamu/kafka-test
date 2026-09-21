@@ -1,5 +1,5 @@
 # kafka-test
-Testing Kafka brocker
+Testing Kafka broker
 
 ## Dependences
 ```sh
