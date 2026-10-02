@@ -3,7 +3,7 @@ Testing Kafka broker
 
 ## Dependences
 ```sh
-@ EL
+# @ EL10
 sudo dnf install meson ninja-build
 sudo dnf install librdkafka-devel
 sudo dnf install podman podman-compose
@@ -60,7 +60,7 @@ podman pod stop kafka-pod
 podman pod rm -f kafka-pod
 ```
 ## License
-MIT
+[License](LICENSE) MIT
 
 ## Author
-dastamu
+**dastamu** - [Profil GitHub](https://github.com/dastamu)
