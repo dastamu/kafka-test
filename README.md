@@ -7,6 +7,9 @@ Testing Kafka broker
 sudo dnf install meson ninja-build
 sudo dnf install librdkafka-devel
 sudo dnf install podman podman-compose
+
+# @ MSYS2 UCRT64
+pacman -S mingw-w64-ucrt-x86_64-cmake mingw-w64-ucrt-x86_64-meson mingw-w64-ucrt-x86_64-ccache mingw-w64-ucrt-x86_64-sccache
 ```
 
 ## Building
