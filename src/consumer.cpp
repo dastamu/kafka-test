@@ -52,10 +52,13 @@ int main(int argc, char* argv[]) {
 
     std::cout << "Oczekiwanie na wiadomości..." << std::endl;
 
+    long cnt=0;
+
     while (true) {
         RdKafka::Message *msg = consumer->consume(1000); // timeout 1s
         if (msg->err() == RdKafka::ERR_NO_ERROR) {
-            std::cout << "Odebrano: " << static_cast<const char *>(msg->payload()) << std::endl;
+            cnt++;
+            std::cout << "Odebrano: " << static_cast<const char *>(msg->payload()) << " (" << cnt << ")." << std::endl;
         }
         delete msg;
     }
