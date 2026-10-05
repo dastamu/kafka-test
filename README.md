@@ -15,13 +15,13 @@ pacman -S mingw-w64-ucrt-x86_64-cmake mingw-w64-ucrt-x86_64-meson mingw-w64-ucrt
 ## Building
 ### Meason
 ```sh
-meson setup build-meson 
+meson setup build-meson --buildtype=release
 meson compile -C build-meson
 ```
 ### CMake
 ```sh
 mkdir build-cmake && cd build-cmake
-cmake -G Ninja ..
+cmake -G Ninja -DCMAKE_BUILD_TYPE=Release ..
 cmake --build .
 ```
 
