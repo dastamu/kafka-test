@@ -13,9 +13,16 @@ pacman -S mingw-w64-ucrt-x86_64-cmake mingw-w64-ucrt-x86_64-meson mingw-w64-ucrt
 ```
 
 ## Building
+### Meason
 ```sh
-meson setup build
-meson compile -C build
+meson setup build-meson 
+meson compile -C build-meson
+```
+### CMake
+```sh
+mkdir build-cmake && cd build-cmake
+cmake -G Ninja ..
+cmake --build .
 ```
 
 ## Runing
